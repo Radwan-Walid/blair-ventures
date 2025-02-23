@@ -1,13 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GiBranchArrow } from "react-icons/gi";
-import { IoConstruct } from "react-icons/io5";
-import { FaHandshakeSimple, FaClipboardList, FaDiagramProject } from "react-icons/fa6";
-import { MdAnalytics } from "react-icons/md";
-import { RiRefreshFill } from "react-icons/ri";
-// import GoogleMap from "@/components/GoogleMap/GoogleMap";
-import LeafletMap from "@/components/LeafletMap/LeafletMap";
 import OurServices from "@/components/landing/OurServices/OurServices";
+import ContactInformation from "@/components/landing/ContactInformation/ContactInformation";
 
 export default function Home() {
   return (
@@ -57,27 +51,8 @@ export default function Home() {
         <Image className="h-48 w-auto max-988:w-[calc(100%-20%)] max-988:h-auto" height={300} width={300} src="/canadian-council.webp" alt="Canadian Council for Indigenous Business" />
       </section>
 
-      <section className="flex items-center gap-20 py-20">
-        <div className="flex-[0.7] relative z-50 after:absolute after:content-[''] after:w-28 after:h-[calc(100%+13.5rem)] after:bg-background after:z-50 right-angled-triangle after:left-[calc(100%+5rem)] after:-top-[6.75rem]">
-          <div>
-            <h1>Our Location</h1>
-            <p>17316 106 Avenue NW, Edmonton, Alberta T5S 1H9, Canada</p>
-          </div>
-          <div>
-            <h1>Contact Information</h1>
-            <p>Info@blairventures.ca</p>
-            <p>780-203-5047</p>
-          </div>
-          <div>
-            <h1>Working Hourse</h1>
-            <p>Mon 09:00 a.m. – 05:00 p.m.</p>
-          </div>
-        </div>
-        {/* <GoogleMap /> */}
-        <LeafletMap />
-      </section>
+      <ContactInformation />
     </div>
 
-    
   );
 }
