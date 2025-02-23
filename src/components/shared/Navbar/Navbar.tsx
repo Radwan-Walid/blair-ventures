@@ -2,11 +2,15 @@
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Dispatch, SetStateAction, Suspense, useRef, useState } from "react";
+import { Dispatch, SetStateAction, Suspense, useEffect, useRef, useState } from "react";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState<boolean>(false);
     const navbarRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+      document.body.style.setProperty("--disable-scroll", isOpen ? "1" : "0");
+    }, [isOpen])
     
   return (
     <nav className={`${ isOpen ? "max-806:h-screen": "max-806:h-24" } relative flex items-center justify-center gap-14 text-lg py-4 pl-8 pr-14 mb-12 max-806:justify-between max-806:items-start max-806:shadow-md max-806:overflow-hidden max-806:bg-background transition-all duration-200`}>

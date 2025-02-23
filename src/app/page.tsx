@@ -25,8 +25,8 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="flex flex-row-reverse items-center gap-24 mx-10 max-806:flex-col max-806:gap-12 mt-32 mb-28">
-        <div>
+      <section className="flex flex-row-reverse items-center gap-24 mx-10 max-806:mx-0 max-806:flex-col max-806:gap-12 mt-32 mb-28">
+        <div className="max-806:text-center">
           <h1 className="text-4xl max-988:text-3xl font-semibold text-[#3E3E3E] mb-2">Our Mission</h1>
           <p>
             At Blair Ventures, our mission is to provide expert construction consulting and staffing solutions that drive project success while upholding the highest standards of integrity, respect, and excellence. We are committed to connecting our clients with skilled professionals who bring expertise, leadership, and reliability to every project.
@@ -34,13 +34,13 @@ export default function Home() {
           </p>
         </div>
 
-        <Image className="h-64 w-auto max-988:w-[calc(100%-20%)] max-988:h-auto" height={300} width={300} src="/our-mission.svg" alt="Canadian Council for Indigenous Business" />
+        <Image className="h-64 w-auto" height={300} width={300} src="/our-mission.svg" alt="Canadian Council for Indigenous Business" />
       </section>
 
       <OurServices />
 
-      <section className="flex items-center gap-24 mx-10 mt-12 max-806:flex-col max-806:gap-12 mb-12">
-        <div>
+      <section className="flex items-center gap-24 mx-10 max-806:mx-0 mt-12 max-806:flex-col max-806:gap-12 mb-12">
+        <div className="max-806:text-center">
           <h1 className="text-4xl max-988:text-3xl font-semibold text-[#3E3E3E] mb-2">Rooted in Tradition and Excellence</h1>
           <p>
             Blair Ventures is a proudly Indigenous-owned construction consulting firm committed to excellence, integrity, and respect. Our deep connection to our culture and community shapes our approach, bringing a unique perspective to every project.
