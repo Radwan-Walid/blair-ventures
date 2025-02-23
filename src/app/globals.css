@@ -3,19 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #F5F9F8;
+  --foreground: #5E5E5E;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.hex {
+  /* // width: 60px !important;
+  // height: 69px !important; */
+  aspect-ratio: 69/60;
+  position: relative;
+  z-index: 10;
+  clip-path: polygon(75% 0, 100% 50%, 75% 100%, 25% 100%, 0 50%, 25% 0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.05s linear transform;
+}
+
+.right-angled-triangle::after {
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+
+.leaflet-control-zoom {
+  left: 20px !important;
+}
+
+.leaflet-control-attribution {
+  display: none;
 }
