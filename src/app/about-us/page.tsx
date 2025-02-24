@@ -120,7 +120,7 @@ const Page = () => {
           We are deeply connected to our culture and community, bringing a unique perspective to every project. Our commitment extends beyond business success—we actively support local businesses, create opportunities for Indigenous professionals, and contribute to the well-being of the communities where we work.
           <br />
           <br />
-          When you partner with Blair Ventures, you're working with a company that prioritizes excellence, collaboration, and community impact.
+          When you partner with Blair Ventures, you&apos;re working with a company that prioritizes excellence, collaboration, and community impact.
           </p>
         </div>
         <div className="flex-1 flex h-96 w-auto max-740:h-auto max-740:max-w-72 max-740:w-72 justify-end">
