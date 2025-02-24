@@ -5,7 +5,11 @@ import "leaflet-defaulticon-compatibility/dist/leaflet-defaulticon-compatibility
 import "leaflet-defaulticon-compatibility";
 import { useEffect, useState } from "react";
 
-const LeafletMap = () => {
+type Props = {
+    className?: string;
+}
+
+const LeafletMap = ({ className = "" }: Props) => {
     const [isClient, setIsClient] = useState<boolean>(false);
 
     useEffect(() => {
@@ -19,7 +23,7 @@ const LeafletMap = () => {
             center={[53.55112792022747, -113.61913572698462]}
             zoom={19}
             scrollWheelZoom={false}
-            className="w-full h-96 z-0 relative max-636:w-[calc(100vw-4rem)]"
+            className={`${className} w-full h-96 z-0 relative max-636:w-[calc(100vw-4rem)]`}
             dragging={false}
         >
             <TileLayer

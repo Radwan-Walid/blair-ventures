@@ -11,7 +11,7 @@ const ContactInformation = () => {
   return (
     <section className="flex items-center gap-20 py-20 max-636:flex-col">
         <div className="flex-[0.7]">
-          <h1 className="text-4xl max-988:text-3xl font-semibold text-[#3E3E3E] mb-4 max-636:text-center">Contact Us</h1>
+          <h1 className="text-4xl max-988:text-3xl font-fjalla text-[#3E3E3E] mb-4 max-636:text-center">Contact Us</h1>
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-1">
                 <h1 className="text-lg font-semibold">Location</h1>
