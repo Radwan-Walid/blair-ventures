@@ -13,7 +13,7 @@ const Navbar = () => {
     }, [isOpen])
     
   return (
-    <nav className={`${ isOpen ? "max-806:h-screen": "max-806:h-24" } relative flex items-center justify-center gap-14 text-lg py-4 pl-8 pr-14 mb-12 max-806:justify-between max-806:items-start max-806:shadow-md max-806:overflow-hidden max-806:bg-background transition-all duration-200`}>
+    <nav id="navbar" className={`${ isOpen ? "max-806:h-screen": "max-806:h-24" } relative flex items-center justify-center gap-14 text-lg py-4 pl-8 pr-14 mb-12 max-806:justify-between max-806:items-start max-806:shadow-md max-806:overflow-hidden max-806:bg-background transition-all duration-200`}>
         <Suspense>
           <NavbarLinks setIsOpen={setIsOpen} />
         </Suspense>

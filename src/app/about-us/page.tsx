@@ -1,40 +1,41 @@
 import Image from "next/image";
+import Link from "next/link";
 import { GiEagleHead, GiBuffaloHead, GiTurtleShell, GiFootprint, GiBearHead, GiWolfHead, GiBeaver } from "react-icons/gi";
 
 const teachings = [
   {
     title: "Love",
-    icon: <GiEagleHead size={72} />,
+    icon: <GiEagleHead size={72} color="#F45F58" />,
     description: "Demonstrating care and commitment to clients, partners, and communities.",
   },
   {
     title: "Wisdom",
-    icon: <GiBeaver size={72} className="relative top-1" />,
+    icon: <GiBeaver size={72} color="#F37F4E" className="relative top-1" />,
     description: "Applying deep industry knowledge to innovate and solve complex problems.",
   },
   {
     title: "Respect",
-    icon: <GiBuffaloHead size={72} />,
+    icon: <GiBuffaloHead size={72} color="#5A9493" />,
     description: "Honoring diverse perspectives and fostering collaboration.",
   },
   {
     title: "Truth",
-    icon: <GiTurtleShell size={72} />,
+    icon: <GiTurtleShell size={72} color="#A2C0B7" />,
     description: "Staying aligned with our mission and core principles.",
   },
   {
     title: "Humility",
-    icon: <GiWolfHead size={72} />,
+    icon: <GiWolfHead size={72} color="#858AEB" />,
     description: "Embracing continuous learning and recognizing contributions.",
   },
   {
     title: "Honesty",
-    icon: <GiFootprint size={72} />,
+    icon: <GiFootprint size={72} color="#F9D146" />,
     description: "Building trust through transparency and ethical decision-making.",
   },
   {
     title: "Courage",
-    icon: <GiBearHead size={72} />,
+    icon: <GiBearHead size={72} color="#EC7AB3" />,
     description: "Tackling challenges with confidence and determination.",
   },
 ]
@@ -55,6 +56,10 @@ const Page = () => {
       <section className="bg-white p-20 max-988:px-4 text-center">
         <h1 className="text-4xl max-988:text-3xl font-semibold text-[#3E3E3E]">Who We Are</h1>
         <p>Blair Ventures is redefining construction consulting and staffing by focusing on collaboration, innovation, and cultural values. We are committed to delivering exceptional project management and staffing solutions that ensure success for our clients and their communities.</p>
+        <h1 className="text-4xl max-988:text-3xl font-fjalla text-[#3E3E3E] text-center mx-auto my-10 relative w-fit after:content-[''] after:absolute after:-bottom-3 after:left-6 after:right-6 after:h-2 after:bg-gray-400">Our Partners</h1>
+        <Link href="https://microengineering.ca/" target="_blank" className="mx-auto text-center inline-block hover:drop-shadow-xl hover:scale-105 transition-all duration-200">
+          <Image className="h-28 w-auto" height={300} width={300} src="/meti.svg" alt="Micro Engineering Tech Inc. (METI) Logo" />
+        </Link>
       </section>
 
       <section className="overflow-hidden text-center px-20 max-988:px-4">

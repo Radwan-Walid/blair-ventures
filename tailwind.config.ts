@@ -34,6 +34,17 @@ export default {
       clipPath: {
         triangle: "polygon(0 0, 100% 100%, 0 100%)",
       },
+      animation: {
+        "loading-dots": "ld 1s infinite linear alternate",
+      },
+      keyframes: {
+        "ld": {
+          "0%": { boxShadow: "20px 0 #000, -20px 0 #0002", background: "#000" },
+          "33%": { boxShadow: "20px 0 #000, -20px 0 #0002", background: "#0002" },
+          "66% ": { boxShadow: "20px 0 #0002, -20px 0 #000", background: "#0002" },
+          "100%": { boxShadow: "20px 0 #0002, -20px 0 #000", background: "#000" },
+        }
+      }
     },
   },
   plugins: [],

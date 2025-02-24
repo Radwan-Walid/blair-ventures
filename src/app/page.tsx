@@ -51,6 +51,13 @@ export default function Home() {
         <Image className="h-48 w-auto max-988:w-[calc(100%-20%)] max-988:h-auto" height={300} width={300} src="/canadian-council.webp" alt="Canadian Council for Indigenous Business" />
       </section>
 
+      <section className="flex flex-col items-center gap-4 pt-6">
+        <h1 className="text-4xl max-988:text-3xl font-fjalla text-[#3E3E3E] text-center mb-2">In Partnership with</h1>
+        <Link href="https://microengineering.ca/" target="_blank" className="hover:drop-shadow-xl hover:scale-105 transition-all duration-200">
+          <Image className="h-28 w-auto" height={300} width={300} src="/meti.svg" alt="Micro Engineering Tech Inc. (METI) Logo" />
+        </Link>
+      </section>
+
       <ContactInformation />
     </div>
 
