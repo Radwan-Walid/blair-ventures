@@ -5,7 +5,7 @@ import ContactInformation from "@/components/landing/ContactInformation/ContactI
 
 export default function Home() {
   return (
-    <div className="px-12 max-988:px-4">
+    <div className="px-12 max-988:px-4 max-w-[80rem] mx-auto">
       <section className="flex items-center justify-between gap-32 max-988:flex-col max-988:justify-center max-988:gap-10 mb-28">
         <div className="flex-1 flex flex-col gap-2 max-988:text-center">
           <h1 className="text-4xl max-988:text-3xl font-semibold text-[#3E3E3E]">Your Trusted Partner in Contract Staffing Solutions and Construction Management.</h1>

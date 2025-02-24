@@ -25,6 +25,8 @@ export default {
         "max-988": { max: "988px" },
         "max-914": { max: "914px" },
         "max-806": { max: "806px" },
+        "max-740": { max: "740px" },
+        "max-658": { max: "658px" },
         "max-636": { max: "636px" },
         "max-576": { max: "576px" },
       },

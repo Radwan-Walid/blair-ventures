@@ -23,7 +23,7 @@ const ContactInformation = () => {
                 <p>780-203-5047</p>
             </div>
             <div className="flex flex-col gap-1">
-                <h1 className="text-lg font-semibold">Working Hours (<span className={`${ dayjs().format("ddd") === "Sun" || dayjs().format("ddd") === "Sat" ? "font-medium": "" } text-sm`}>Closed Today</span>)</h1>
+                <h1 className="text-lg font-semibold">Working Hours <span className={`${ dayjs().format("ddd") === "Sun" || dayjs().format("ddd") === "Sat" ? "font-medium": "hidden" } text-sm`}>(Closed Today)</span></h1>
                 <p className={`${ dayjs().format("ddd") === "Mon" ? "font-bold": "" }`}>Mon 09:00 a.m. – 05:00 p.m.</p>
                 <p className={`${ dayjs().format("ddd") === "Tue" ? "font-bold": "" }`}>Tue 09:00 a.m. – 05:00 p.m.</p>
                 <p className={`${ dayjs().format("ddd") === "Wed" ? "font-bold": "" }`}>Wed 09:00 a.m. – 05:00 p.m.</p>
